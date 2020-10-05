@@ -184,3 +184,28 @@ footer a:hover{
     overflow: hidden;
     height: 150px;
 }
+@keyframes pasando-por-el-canal {
+    from {
+        left: 105vw;
+        top: 0;
+    }
+    to {
+        left: -10vw;
+        top: 0;
+    }
+}
+
+.canal img {
+    height: 100px;
+    width: auto;
+    position: absolute;
+    animation-name: pasando-por-el-canal;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@media (max-width: 768px) {
+    .canal img {
+        height: 80px;
+        width: auto;
+    }
