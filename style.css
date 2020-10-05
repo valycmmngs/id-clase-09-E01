@@ -1,0 +1,186 @@
+body {
+    font-family: "Source Serif Pro", serif;
+    font-weight: 300;
+    background: #88ae88;
+    color: #303030;
+}
+h1 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 1.5rem 1.5rem 1rem 1.5rem;
+    color: #404040;
+}
+
+h1 span {
+    font-weight: 600;
+}
+
+h2 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+h2 span {
+    font-weight: 400;
+}
+
+h3 {
+    color: #fff;
+    font-style: italic;
+    letter-spacing: 0.025rem;
+    font-size: 1.25rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+}
+
+h3 span {
+    border-bottom: 1px solid #fff;
+}
+
+h6 {
+    font-family: "Source Sans Pro", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
+    color: #dfdbd0;
+}
+
+h6 span {
+    font-weight: 300;
+}
+
+p em{
+    font-weight:400;
+    font-style: normal;
+}
+
+dl dt,
+dl dd {
+    display: inline;
+}
+
+dl dt {
+    padding-right: 0.2rem;
+    margin-right: 0.3rem;
+    font-weight: 400;
+}
+
+dl:nth-child(1) dt {
+    background: #7da57e;
+}
+
+dl:nth-child(2) dt {
+    border-bottom: 1px dashed #5e725f;
+}
+
+dl:nth-child(3) dt {
+    border-bottom: 1px solid #5e725f;
+}
+
+/* la siguiente clase se quita (removeClass) o agrega (addClass) con jQuery */
+.esconder {
+    display:none;
+}
+
+figure#distancias svg text {
+    font-family: Source-Sans-Pro, sans-serif;
+    font-weight: 300; 
+    font-size: 20px;
+    fill:#647f60;
+}
+
+figure#distancias svg circle.intimate {
+    stroke: none;
+    fill: #7fa579;
+}
+
+figure#distancias svg circle.personal {
+    stroke: #5e725f;
+    stroke-dasharray: 8 10;
+    fill: none;
+}
+
+figure#distancias svg circle.social {
+    stroke: #5e725f;
+    fill: none;
+}
+
+figure#distancias svg circle.guideline {
+    stroke: white;
+    fill: none;
+}
+
+figure#distancias svg text.pais {
+    font-size: 30px;
+    fill:#303030;
+}
+
+figure#distancias svg text.cm {
+    fill: white;
+}
+
+footer {
+    color:#E5DDD2;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.01rem;
+    margin: 100px 0 0 0;
+    border-top: 1px solid #7fa579;
+    background: #00798b url(img/bg-footer.png) top center repeat-x;
+    background-size: auto 250px;
+    min-height: 300px;
+}
+
+footer a{
+    color:#E5DDD2;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color:#FFFFFF;
+    text-decoration: underline;
+}
+
+.camino {
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+}
+
+@keyframes pasando-por-el-camino {
+    from {
+        left: -5vw;
+        top: 0;
+    }
+    to {
+        left: 105vw;
+        top: 0;
+    }
+}
+
+.camino img {
+    height: 100px;
+    width: auto;
+    position: absolute;
+    animation-name: pasando-por-el-camino;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@media (max-width: 768px) {
+    .camino img {
+        height: 80px;
+        width: auto;
+    }
+}
+
+.canal {
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+}
